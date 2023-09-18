@@ -1,0 +1,448 @@
+@font-face {
+    font-family: 'Inconsolata-Regular';
+    src: url(../Tipografia/Inconsolata-Regular.ttf);
+}
+@font-face {
+    font-family: 'Inconsolata-Semibold';
+    src: url(../Tipografia/Inconsolata-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Inconsolata-ExtraBold';
+    src: url(../Tipografia/Inconsolata-ExtraBold.ttf);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+    
+}
+header{
+    background-color: rgb(41, 40, 40);
+    box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.459);
+}
+
+.Nav{
+    margin: 0% 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#Btn_Hamburg{
+    display: none;
+}
+#Btn_Hamburg:hover{
+    cursor: pointer;
+}
+#DropdownHamburg{
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    left: 0px;
+    width: 100%;
+    display: block;
+    height: 0;
+    transition: .3s height;
+    overflow: hidden;
+    background-color: rgb(49, 48, 48);
+    border-radius: 0% 0% 3px 3px;
+}
+.Brand{
+    padding: 1.5% 5% 1.5% 3%;
+}
+.Seccion{
+    display: flex;
+    width: 100%;
+    justify-content:end;
+    align-items: center;
+    margin: 0% 5%;
+}
+.Selection{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+    gap: 30px;
+}
+#QuienSoy{
+    min-width: 88px;
+}
+#QuienSoy a{
+    color: #fff;
+    text-decoration: none;
+}
+.Porta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90px;
+}
+#Portafolio{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85px;
+    
+}
+.Porta:hover{
+    cursor: pointer;
+}
+.PortaHov{
+    right: 0%;
+    color: #fff;
+    text-decoration: none;
+    padding: 2% 1%;
+}
+#Icon_Portafolio{
+    width: 10px;
+    height: 10px;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    background-color: #fff;
+    margin-top: 2%;
+    transform: rotate(180deg);
+}
+#Help a{
+    color: #fff;
+    text-decoration: none;
+}
+#Search{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+#Search form input{
+    margin: 0% 0% 0% 5%;
+    width: auto;
+    border-radius: 2px;
+}
+#Search i{
+    color: #fff;
+    margin: auto 20%;
+}
+#Search i:hover{
+    color: #0fb9b6;
+    cursor: pointer;
+}
+
+
+#Dropdown_Box{
+    float: right;
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    left: -10px;
+    width: 400px;
+    background-color: rgb(49, 48, 48);
+    border-radius: 0% 0% 3px 3px;
+    display: none;
+    height: 0;
+    transition: .3s height;
+    overflow: hidden;
+}
+.Dropdown_Element{
+    padding: 3% 4%;
+}
+.Dropdown_Element:hover{
+    border-bottom: 1px solid #0fb9b6;
+    background-color: #0fb9b609;
+}
+.Dropdown_Element a{
+    width: 100%;
+    height: 100%;
+    padding: 4% 0%;
+    text-decoration: none;
+    color: #fff;
+}
+.Dropdown_Element a:active {
+    color: #0fb9b6;
+}
+
+.arrow-container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: arrow 1s infinite ;
+    width: 50px;
+    top: 0%;
+    height: 50px;
+    left: 48%;
+}
+.arrow{
+    position: relative;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	border-top: solid 2px;
+	border-right: solid 2px;
+    top: 5%;
+}
+.arrow.down {
+	transform: rotate(135deg);
+}
+.arrow.down:hover::before {
+    position: absolute;
+    content: " ";
+    display: block;
+    top: 70%;
+    right: 70%;
+	width: 24px;
+	height: 24px;
+	border-top: solid 2px;
+	border-right: solid 2px;
+}
+.arrow-container{
+    cursor: pointer;
+}
+.arrow.down:hover::after {
+    position: absolute;
+    content: " ";
+    display: block;
+    bottom: 70%;
+    left: 70%;
+	width: 24px;
+	height: 24px;
+	border-top: solid 2px;
+	border-right: solid 2px;
+}
+
+
+
+.overScroll{
+    overflow: hidden;
+}
+#Scroll{
+    display: none;
+    /* animation-name: Scrolling; */
+    /* animation-duration: 2s; */
+
+}
+#Logo{
+    width: 130px;
+}
+.dropdown-toggle:hover {
+    cursor: pointer;
+}
+
+    
+.clear-both{
+    clear: both;
+}
+#SeccionB2{
+    margin: 1% 0%;
+}
+#Scn2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30% 5% 20% 0%;
+}
+#Scn2 h3{
+    font-size: 3vw;
+    text-align: center;
+}
+#Scn2 p{
+    width: 80%;
+    text-align: center;
+}
+#Scn2 a{
+    margin-top: 2%;
+    padding: 1% 2%;
+    border: 1px solid #0fb9b6;
+    text-decoration: none;
+    text-align: center;
+}
+#Scn2 a:hover{
+    cursor: pointer;
+    background-color: #0fb9b6;
+    color: #fff;
+}
+
+
+/* Carousell */
+
+
+.PortaSlide{
+    margin: 0% 5% ;
+}
+.active{
+    background-color: #0fb9b6;
+}
+.ControlSlide{
+    width: 93%;
+}
+.Slide_Box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;   
+    margin: 0% 0% 0% 4%;
+    
+}
+.Slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 750px;
+}
+.Gallery{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    top: 0%;
+    width: 200%;
+    left: 0%;
+    transition: all 2s ease;
+    transform: translateX(0%);
+}
+.Box{
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 50%;
+    height: 550px;
+    margin: 1% 0.5% 1% ;
+    background-color:#0fb9b6;
+    overflow: hidden;
+}
+.Box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.TextBox{
+    display: none;
+    
+}
+.Box a{
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0fb9b6be;
+    border-radius: 10px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+.Box a p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 3% 5%;
+    border: 1px solid #fff;
+    transform: translate(-50%,-50%);
+}
+.Cell{
+    display: none;
+}
+.Btns{  
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    justify-content: space-between;
+    width: 110px;
+}
+.btnSlide{  
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    border: 1px solid #0fb9b6;
+}
+.btnSlide:hover{  
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+
+footer{
+    background: linear-gradient(#0fb9b6,#0fb9b6);
+}
+.Contacto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10%;
+    background: linear-gradient(#0fb9b6,#0fb9b6);
+    width: 100%;
+    height: 500px;
+    
+}
+.textfooter{
+    font-size: 1.8vh;
+    width: 40%;
+}
+.ImgFooter{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    width: 50%;
+    margin: 0% 2%;
+}
+.Copyright{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    height: 100px;
+}
+.Copyright p{
+    font-size: 1.5vh;
+    color: #868686;
+}
+
+
+/* Animaciones */
+
+
+@keyframes Scrolling {
+    0%{height: 0px;}
+    100%{height: 65px;}
+}
+@keyframes arrow {
+    0%{top: 0%; opacity: 40%; height: 10%;}
+    100%{top: 6%; opacity: 100%; height: 10%;}
+}
+@keyframes AcordeonOut{
+    0%{height: 250px;}
+    100%{height: 0px;}
+}
+@keyframes AcordeonOver{
+    0%{height: 0px;}
+    100%{height: 250px;}
+}
+@keyframes HamburgAcordeonOut{
+    0%{height: 250px;}
+    100%{height: 0px;}
+}
+@keyframes HamburgAcordeonOver{
+    0%{height: 0px;}
+    100%{height: 250px;}
+}
+
+@keyframes OpacityGallery{
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+@keyframes OpacityGalleryOut{
+    0%{opacity: 100%;}
+    100%{opacity: 0%;}
+}
+
