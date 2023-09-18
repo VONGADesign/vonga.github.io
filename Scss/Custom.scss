@@ -1,0 +1,31 @@
+$primary:#0fb9b6; 
+$secondary:#ff772e;
+$text-decoration: none;
+$dark:rgb(0, 0, 0);
+$info:#ffffff;
+$line-height:0.5;
+$dropdown-border-radius: 0px 0px 3% 3%;
+$info:#fff;
+$dropdown-dark-bg:$dark;
+$dropdown-dark-border-color:none;   
+$body-font-family:'Inconsolata-Regular';
+$dropdown-item-padding-y:0.50rem;
+
+
+@font-face {
+    font-family: 'Inconsolata-Regular';
+    src: url(../Tipografia/Inconsolata-Regular.ttf);
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'Inconsolata-Semibold';
+    src: url(../Tipografia/Inconsolata-SemiBold.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Inconsolata-ExtraBold';
+    src: url(../Tipografia/Inconsolata-ExtraBold.ttf);
+    font-weight: 100;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
